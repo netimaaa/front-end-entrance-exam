@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     localStorage.removeItem("profilePhoto");
-    photoImg.src = "/profileImg.jpg";
+    photoImg.src = "./public/profileImg.jpg";
     photoInput.value = "";
   });
 

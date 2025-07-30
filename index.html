@@ -1,13 +1,301 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Exam</title>
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="text-normal">
+    <div class="buttons-container">
+      <button class="ripple-container" id="resetBtn">Сбросить</button>
+      <button class="ripple-container" id="downloadBtn">Скачать PDF</button>
+    </div>
+    <main class="main" id="app">
+      <header class="cv-header">
+        <div>
+          <label for="photoInput" class="photo-wrapper">
+            <img
+              src="/profileImg.jpg"
+              alt="Profile picture"
+              class="header-box photo"
+            />
+            <span class="photo-overlay">
+              <img src="/camera.svg" alt="Change photo" class="photo-icon" />
+            </span>
+          </label>
+
+          <input type="file" id="photoInput" accept="image/*" />
+        </div>
+        <section class="header-box user-info">
+          <div contenteditable>Hello 👋 I’m</div>
+          <div class="user-data">
+            <h1 class="user-name" contenteditable>Karthik SR</h1>
+            <p class="user-profession" contenteditable>UX/UI Designer</p>
+          </div>
+        </section>
+        <section class="languages">
+          <p contenteditable class="section-title">Languages</p>
+          <div class="languages-list">
+            <div class="languages-item">
+              <div class="language-wrapper">
+                <p contenteditable class="languages-text">English</p>
+                <div class="slider-container">
+                  <div class="progress-bar"></div>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="100"
+                    class="hidden-range"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="languages-item">
+              <div class="language-wrapper">
+                <p contenteditable class="languages-text">Malayalam</p>
+                <div class="slider-container">
+                  <div class="progress-bar"></div>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="100"
+                    class="hidden-range"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="languages-item">
+              <div class="language-wrapper">
+                <p contenteditable class="languages-text">Hindi</p>
+                <div class="slider-container">
+                  <div class="progress-bar"></div>
+                  <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="77"
+                    class="hidden-range"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+      <section class="cv-body">
+        <section class="cv-body-children experience">
+          <p contenteditable class="section-title">Experience</p>
+          <div class="experience-list">
+            <article
+              class="experience-item experience-item-active ripple-container"
+            >
+              <div class="experience-item-header flex-between text-semismall">
+                <p contenteditable>Jun. 2023 - Present</p>
+                <p contenteditable class="experience-item-tag">most recent</p>
+              </div>
+              <div class="experience-data">
+                <div class="experience-text">
+                  <p contenteditable class="experience-item-title">
+                    Marketing Manager
+                  </p>
+                  <p
+                    contenteditable
+                    class="experience-item-subtitle text-small experience-item-active-subtitle"
+                  >
+                    Pankayam | Full-time
+                  </p>
+                </div>
+                <ul class="text-small experience-item-list">
+                  <li contenteditable>
+                    Strategy development and planning of campaigns that promote
+                    the business and generate genuine traffic
+                  </li>
+                  <li contenteditable>
+                    SEO Content Creation for Blogs, Website, Social media
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="experience-item">
+              <div class="experience-item-header flex-between text-semismall">
+                <p contenteditable>2017 - Present</p>
+              </div>
+              <div class="experience-data">
+                <div class="experience-text">
+                  <p contenteditable class="experience-item-title">
+                    Graphic / Web designer
+                  </p>
+                  <p
+                    contenteditable
+                    class="experience-item-subtitle text-small"
+                  >
+                    Freelance
+                  </p>
+                </div>
+                <ul class="text-small experience-item-list">
+                  <li contenteditable>
+                    Development of internal projects from scratch, product
+                    design of brands
+                  </li>
+                  <li contenteditable>Landing page, webapps and hybrid apps</li>
+                  <li contenteditable>
+                    Coordinating with outside agencies, art services, web
+                    designer, marketing, printers, and colleagues as necessary.
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="experience-item">
+              <div class="experience-item-header flex-between text-semismall">
+                <p contenteditable>Sep. 2021 - Jun. 2023</p>
+              </div>
+              <div class="experience-data">
+                <div class="experience-text">
+                  <p contenteditable class="experience-item-title">
+                    Legal Assistant
+                  </p>
+                  <p
+                    contenteditable
+                    class="experience-item-subtitle text-small"
+                  >
+                    Law Firm | Intern
+                  </p>
+                </div>
+                <ul class="text-small experience-item-list">
+                  <li contenteditable>
+                    Provide administrative support to lawyer and enhance office
+                    effectiveness
+                  </li>
+                  <li contenteditable>
+                    Handle communication with clients, witnesses etc.
+                  </li>
+                  <li contenteditable>
+                    Prepare case briefs and summarize depositions,
+                    interrogatories and testimony
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="cv-body-children tools">
+          <p contenteditable class="section-title">Tools</p>
+          <div class="tools-list">
+            <div class="tools-item">
+              <p contenteditable class="tools-title">design</p>
+              <div class="tools-grid">
+                <img src="/logoFigma.svg" alt="Figma logo" />
+                <img src="/adobe_photoshop.svg" alt="Adobe Photoshop logo" />
+                <img
+                  src="/adobe_illustrator.svg"
+                  alt="Adobe Illustrator logo"
+                />
+                <img src="/adobe_premiere.svg" alt="Adobe Premiere logo" />
+                <img src="/logoNotion.svg" alt="Notion logo" />
+                <img src="/logoMeet.svg" alt="Google Meet logo" />
+              </div>
+            </div>
+            <div class="tools-item">
+              <p contenteditable class="tools-title">no-code</p>
+              <div class="tools-grid">
+                <img src="/logoZapìer.svg" alt="Zapier logo" />
+                <img src="/logoWebflow.svg" alt="Webflow logo" />
+                <img src="/logoFramer.svg" alt="Framer logo" />
+                <img src="/logoWordpress.svg" alt="WordPress logo" />
+              </div>
+            </div>
+            <div class="tools-item">
+              <p contenteditable class="tools-title">artoficial intelligence</p>
+              <div class="tools-grid">
+                <img src="/logoChatGPT.svg" alt="ChatGPT logo" />
+                <img src="/logoCopilot.svg" alt="GitHub Copilot logo" />
+                <img src="/logoMidjourney.svg" alt="Midjourney logo" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer class="cv-footer">
+        <section class="cv-footer-children education">
+          <p contenteditable class="section-title">Education</p>
+          <div class="education-list">
+            <article
+              class="education-item education-item-active ripple-container"
+            >
+              <div class="flex-between">
+                <p contenteditable>2023</p>
+                <img src="/heart.svg" alt="Heart icon" />
+              </div>
+              <div>
+                <p contenteditable>UI/UX</p>
+                <p
+                  contenteditable
+                  class="text-small education-item-active-tags"
+                >
+                  #UX #UI #research #DesignSystem #Ui #wireframing #figma #Ux
+                </p>
+              </div>
+              <p contenteditable class="text-small">Coursera</p>
+            </article>
+            <article class="education-item">
+              <div class="flex-between">
+                <p contenteditable>2017 - 2022</p>
+              </div>
+              <div>
+                <p contenteditable>Law</p>
+                <p contenteditable class="text-small">
+                  #law #legalStudies #contracts #internationalLaws
+                </p>
+              </div>
+              <p contenteditable class="text-small">University of Kerala</p>
+            </article>
+            <article class="education-item">
+              <div class="flex-between">
+                <p contenteditable>2017</p>
+              </div>
+              <div>
+                <p contenteditable>Graphic design</p>
+                <p contenteditable class="text-small">
+                  #branding #web #illustration #adobe
+                </p>
+              </div>
+              <p contenteditable class="text-small">Coursera</p>
+            </article>
+          </div>
+        </section>
+        <section class="cv-footer-children cv-footer-right">
+          <div class="interests">
+            <p contenteditable class="section-title">Interests</p>
+            <div class="tags-list">
+              <div contenteditable class="tags-item">branding</div>
+              <div contenteditable class="tags-item">design</div>
+              <div contenteditable class="tags-item">photography</div>
+              <div contenteditable class="tags-item">
+                artificial intelligence
+              </div>
+              <div contenteditable class="tags-item">illustration</div>
+              <div contenteditable class="tags-item">typography</div>
+              <div contenteditable class="tags-item">social networks</div>
+              <div contenteditable class="tags-item">research</div>
+              <div contenteditable class="tags-item">dron pilot</div>
+              <div contenteditable class="tags-item">games</div>
+            </div>
+          </div>
+          <div class="contact ripple-container">
+            <p contenteditable class="contact-title">
+              Let’s chat! I’m ready to work on exciting projects
+            </p>
+            <p contenteditable class="contact-mail">
+              srkarthik.designscape@gmail.com
+            </p>
+          </div>
+        </section>
+      </footer>
+    </main>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
